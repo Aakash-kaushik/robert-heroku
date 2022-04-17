@@ -48,6 +48,10 @@ Use the following command to install the libraries from [requirements.txt](requi
 Run the webapplication<br>
 ```streamlit run app.py```
 
+## Bot in Action
+
+<img src="assets/bot.gif">
+
 ## License 
 This project is under the Apache License. See [LICENSE](LICENSE) for Details.
 
