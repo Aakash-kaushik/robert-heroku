@@ -1,2 +1,2 @@
-streamlit==0.67.1
-https://download.pytorch.org/whl/cpu/torch-1.1.0-cp36-cp36m-linux_x86_64.whl
+torch==1.5.1+cpu
+streamlit==0.69.2
