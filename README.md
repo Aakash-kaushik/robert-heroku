@@ -50,5 +50,3 @@ Run the webapplication<br>
 ## License 
 This project is under the Apache License. See [LICENSE](LICENSE) for Details.
 
-## Contributors
-
