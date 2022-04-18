@@ -25,6 +25,10 @@ For this project we decided to go for the Cornell Movie Dialogue Corpus, which s
 - involves 9,035 characters from 617 movies
 - in total 304,713 utterances
 
+Once we got the data, we proceessed the data by formatting unwanted metadata and created sentence pairs that could serve as historic data for our GRU Module.
+
+For this particular project we decided to go for a lexical approach for the analysis of the data. In which we proceeded to group streams of letters and words from source into basic units of meaning called tokens.
+
 ## Architecture
 
 <img src="assets/model.png" width=1000>
@@ -44,6 +48,8 @@ Run the webapplication<br>
 ```streamlit run app.py```
 
 ## Bot in Action
+
+Here you can see our model in action, while hosted on a streamlit application.
 
 <img src="assets/bot.gif">
 
