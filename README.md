@@ -32,7 +32,7 @@ For this project we decided to go for the Cornell Movie Dialogue Corpus, which s
 ### Model
 Chatbot is a sequence-to-sequence (seq2seq) model. The goal of a seq2seq model is to take a variable-length sequence as an input, and return a variable-length sequence as an output using a fixed-sized model.
 
-## How can you run it
+## How to run it
 
 Set up the python environment yourself by first cloning the repo<br>
 ```git clone https://github.com/Aakash-kaushik/robert-heroku```
