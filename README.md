@@ -53,6 +53,8 @@ Here you can see our model in action, while hosted on a streamlit application.
 
 <img src="assets/bot.gif">
 
+However if you want to check out the full functionality of the project, you can check out the following link: [CLICK ME](!https://drive.google.com/file/d/1ne1f7s1jswVHZxB1p-FqGAH_Eay9HUS_/view?usp=sharing)
+
 ## License 
 This project is under the Apache License. See [LICENSE](LICENSE) for Details.
 
