@@ -1,5 +1,7 @@
 import streamlit as st
 from bot import *
+from bokeh.models.widgets import Button
+from bokeh.models import CustomJS
 
 # Sidebar Menu
 st.sidebar.image("assets/logo.png", width=300)
@@ -34,7 +36,7 @@ st.write("\n")
 
 st.markdown(title, unsafe_allow_html=True)
 user_input = st.text_input("Enter your Message here", "Hey")
-bot_output_list = eval_input(encoder, decoder, searcher, voc, user_input)
+bot_output_list = eval_input(encoder_rnn, decoder, searcher, voc, user_input)
 if bot_output_list != -1:
     bot_output_str = ""
     for bot_output_word in bot_output_list:
@@ -44,8 +46,21 @@ if bot_output_list != -1:
 else:
     st.write("Robert: ", "Try something else human.🧍")
 
-st.write("\n")
-st.write("\n")
+tts_button = Button(label="Speak", width=100)
 
+tts_button.js_on_event(
+    "button_click",
+    CustomJS(
+        code=f"""
+    var u = new SpeechSynthesisUtterance();
+    u.text = "{bot_output_str}";
+    u.lang = 'en-US';
+
+    speechSynthesis.speak(u);
+    """
+    ),
+)
+
+st.bokeh_chart(tts_button)
 st.write("\n")
 st.write("\n")
